@@ -180,10 +180,10 @@
 
       /* ===== TOP CONTROLS (Legend + Search) ===== */
       .top-controls {
-        display: flex;
-        gap: 20px;
-        align-items: stretch;
-        margin-bottom: 16px;
+        display: flex; /* Use flexbox for layout */
+        gap: 20px; /* Space between items */
+        align-items: stretch; /* Stretch items to fill height */
+        margin-bottom: 16px; /* Bottom margin */
       }
       .top-controls-left {
         flex: 1;
@@ -191,140 +191,140 @@
         display: flex;
       }
       .top-controls-right {
-        width: 350px;
-        flex-shrink: 0;
-        display: flex;
+        width: 350px; /* Width */
+        flex-shrink: 0; /* Prevent shrinking */
+        display: flex; /* Use flexbox for layout */
       }
       .top-controls-right .sidebar-section {
         background: #f9fafb;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        box-shadow: none;
-        border: 1px solid rgba(0, 0, 0, 0.04);
+        display: flex; /* Use flexbox for layout */
+        flex-direction: column; /* Stack items vertically */
+        justify-content: center; /* Center items horizontally */
+        box-shadow: none; /* No shadow */
+        border: 1px solid rgba(0, 0, 0, 0.04); /* Border */
         width: 100%;
       }
       .top-controls-right .sidebar-section:hover {
-        box-shadow: none;
-        border-color: rgba(0, 0, 0, 0.06);
+        box-shadow: none; /* No shadow */
+        border-color: rgba(0, 0, 0, 0.06); /* Border color */
       }
 
       /* ===== MAIN LAYOUT ===== */
       .main-layout {
-        display: flex;
-        gap: 16px;
-        align-items: flex-start;
+        display: flex; /* Use flexbox for layout */
+        gap: 16px; /* Space between items */
+        align-items: flex-start; /* Align items to start of container */
       }
       .main-content {
         flex: 1;
         min-width: 0;
       }
       .sidebar {
-        width: 350px;
-        flex-shrink: 0;
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
+        width: 350px; /* Width */
+        flex-shrink: 0; /* Prevent shrinking */
+        display: flex; /* Use flexbox for layout */
+        flex-direction: column; /* Stack items vertically */
+        gap: 16px; /* Space between items */
       }
       .bottom-section {
-        margin-top: 16px;
+        margin-top: 16px; /* Top margin */
       }
       .sidebar-section {
-        background: white;
-        padding: 20px;
-        border-radius: 16px;
+        background: white; /* White background */
+        padding: 20px; /* Padding */
+        border-radius: 16px; /* Rounded corners */
         box-shadow:
           0 1px 2px rgba(0, 0, 0, 0.04),
           0 4px 12px rgba(0, 0, 0, 0.04);
-        border: 1px solid rgba(0, 0, 0, 0.06);
-        transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        border: 1px solid rgba(0, 0, 0, 0.06); /* Border */
+        transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1); /* Smooth transition */
       }
       .sidebar-section:hover {
         box-shadow:
           0 2px 4px rgba(0, 0, 0, 0.06),
-          0 8px 16px rgba(0, 0, 0, 0.06);
-        border-color: rgba(0, 0, 0, 0.08);
+          0 8px 16px rgba(0, 0, 0, 0.06); /* Shadow */
+        border-color: rgba(0, 0, 0, 0.08); /* Border color */
       }
       .sidebar-section-title {
-        font-weight: 600;
-        font-size: 13px;
-        margin-bottom: 12px;
-        color: #1a1a1a;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-        opacity: 0.7;
+        font-weight: 600; /* Bold font weight */
+        font-size: 13px; /* Font size */
+        margin-bottom: 12px; /* Bottom margin */
+        color: #1a1a1a; /* Black color */
+        text-transform: uppercase; /* Uppercase text */
+        letter-spacing: 0.5px; /* Letter spacing */
+        opacity: 0.7; /* Opacity */
       }
       .diagram-title {
-        font-size: 2.75em;
-        font-weight: 700;
-        margin-bottom: 12px;
-        color: #0a0a0a;
-        letter-spacing: -0.02em;
-        text-align: center;
-        line-height: 1.1;
+        font-size: 2.75em; /* Font size */
+        font-weight: 700; /* Bold font weight */
+        margin-bottom: 12px; /* Bottom margin */
+        color: #0a0a0a; /* Black color */
+        letter-spacing: -0.02em; /* Letter spacing */
+        text-align: center; /* Center text */
+        line-height: 1.1; /* Line height */
       }
       .diagram-subtitle {
-        font-size: 1.05em;
-        color: #6b7280;
-        margin-bottom: 20px;
-        text-align: center;
-        font-weight: 400;
+        font-size: 1.05em; /* Font size */
+        color: #6b7280; /* Gray color */
+        margin-bottom: 20px; /* Bottom margin */
+        text-align: center; /* Center text */
+        font-weight: 400; /* Regular font weight */
       }
 
       /* ===== TOOLTIP (glassy) ===== */
       .tooltip {
-        position: absolute;
-        padding: 16px 18px;
-        background: rgba(255, 255, 255, 0.85);
+        position: absolute; /* Position absolutely */
+        padding: 16px 18px; /* Padding */
+        background: rgba(255, 255, 255, 0.85); /* White background */
         backdrop-filter: blur(20px) saturate(180%);
-        -webkit-backdrop-filter: blur(20px) saturate(180%);
-        color: #1a1a1a;
-        border-radius: 16px;
-        pointer-events: none;
-        opacity: 0;
+        -webkit-backdrop-filter: blur(20px) saturate(180%); /* Blur effect */
+        color: #1a1a1a; /* Black color */
+        border-radius: 16px; /* Rounded corners */
+        pointer-events: none; /* Let mouse events pass through */
+        opacity: 0; /* Transparent */
         transition:
           opacity 0.3s ease,
-          transform 0.3s ease;
-        font-size: 13px;
+          transform 0.3s ease; /* Smooth transition */
+        font-size: 13px; /* Font size */
         line-height: 1.6;
-        max-width: 280px;
-        z-index: 1000;
+        max-width: 280px; /* Maximum width */
+        z-index: 1000; /* Z-index */
         box-shadow:
           0 8px 32px rgba(0, 0, 0, 0.12),
           0 2px 8px rgba(0, 0, 0, 0.08),
-          inset 0 1px 0 rgba(255, 255, 255, 0.9);
+          inset 0 1px 0 rgba(255, 255, 255, 0.9); /* Shadow */
         border: 1px solid rgba(255, 255, 255, 0.8);
       }
       .tooltip-title {
-        font-weight: 600;
-        font-size: 14px;
-        margin-bottom: 10px;
-        color: #0a0a0a;
+        font-weight: 600; /* Bold font weight */
+        font-size: 14px; /* Font size */
+        margin-bottom: 10px; /* Bottom margin */
+        color: #0a0a0a; /* Black color */
       }
       .tooltip div {
         color: #374151;
         margin-bottom: 4px;
-      }
+      } /* Bottom margin */
       .tooltip div:last-child {
         margin-bottom: 0;
-      }
+      } /* No bottom margin for last child */
       .tooltip strong {
         color: #1a1a1a;
         font-weight: 600;
       }
       rect {
-        cursor: pointer;
+        cursor: pointer; /* Pointer cursor */
       }
 
       /* ===== YEAR ANNOTATIONS ===== */
       .annotation-text {
-        font-size: 14px;
-        line-height: 1.7;
-        color: #4b5563;
-        padding: 16px;
-        background: #f9fafb;
-        border-radius: 12px;
-        border-left: 3px solid #06b6d4;
+        font-size: 14px; /* Font size */
+        line-height: 1.7; /* Line height */
+        color: #4b5563; /* Gray color */
+        padding: 16px; /* Padding */
+        background: #f9fafb; /* White background */
+        border-radius: 12px; /* Rounded corners */
+        border-left: 3px solid #06b6d4; /* Left border */
       }
 
       /* ===== SEARCH BOX ===== */
@@ -333,85 +333,85 @@
         width: 100%;
       }
       .search-icon {
-        position: absolute;
-        left: 14px;
+        position: absolute; /* Position absolutely */
+        left: 14px; /* Left position */
         top: 50%;
-        transform: translateY(-50%);
-        color: #9ca3af;
-        font-size: 16px;
-        pointer-events: none;
+        transform: translateY(-50%); /* Center vertically */
+        color: #9ca3af; /* Gray color */
+        font-size: 16px; /* Font size */
+        pointer-events: none; /* Let mouse events pass through */
       }
       .search-icon::before {
         content: "⌕";
       }
       #searchBox {
-        padding: 12px 16px 12px 42px;
+        padding: 12px 16px 12px 42px; /* Padding */
         border: 1.5px solid #e5e7eb;
-        border-radius: 12px;
-        font-size: 14px;
+        border-radius: 12px; /* Rounded corners */
+        font-size: 14px; /* Font size */
         width: 100%;
-        box-sizing: border-box;
+        box-sizing: border-box; /* Include padding in width calculation */
         transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-        background: #fff;
+        background: #fff; /* White background */
         color: #1a1a1a;
       }
       #searchBox:focus {
-        outline: none;
-        border-color: #06b6d4;
-        box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.1);
+        outline: none; /* No outline */
+        border-color: #06b6d4; /* Blue border */
+        box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.1); /* Shadow */
       }
       .search-container:focus-within .search-icon {
-        color: #06b6d4;
+        color: #06b6d4; /* Blue color */
       }
       #searchBox::placeholder {
-        color: #9ca3af;
+        color: #9ca3af; /* Gray color */
       }
 
       /* ===== PLAY BUTTON ===== */
       #playButton {
-        padding: 14px 24px;
+        padding: 14px 24px; /* Padding */
         background: #14b8a6;
-        color: white;
-        border: none;
-        border-radius: 12px;
-        font-size: 14px;
-        font-weight: 600;
-        cursor: pointer;
-        width: 100%;
+        color: white; /* White color */
+        border: none; /* No border */
+        border-radius: 12px; /* Rounded corners */
+        font-size: 14px; /* Font size */
+        font-weight: 600; /* Bold font weight */
+        cursor: pointer; /* Pointer cursor */
+        width: 100%; /* Full width */
         transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
         box-shadow:
           0 1px 2px rgba(20, 184, 166, 0.2),
           0 4px 8px rgba(20, 184, 166, 0.15);
-        position: relative;
-        overflow: hidden;
+        position: relative; /* Position relatively */
+        overflow: hidden; /* Clip content to container */
       }
       #playButton::before {
-        content: "";
-        position: absolute;
+        content: ""; /* Empty content */
+        position: absolute; /* Position absolutely */
         top: 0;
-        left: -100%;
+        left: -100%; /* Left position */
         width: 100%;
-        height: 100%;
+        height: 100%; /* Full width and height */
         background: linear-gradient(
           90deg,
           transparent,
           rgba(255, 255, 255, 0.2),
           transparent
         );
-        transition: left 0.5s;
+        transition: left 0.5s; /* Smooth transition */
       }
       #playButton:hover::before {
         left: 100%;
       }
       #playButton:hover {
-        background: #0d9488;
+        background: #0d9488; /* Darker green background */
         transform: translateY(-1px);
         box-shadow:
           0 2px 4px rgba(20, 184, 166, 0.25),
-          0 6px 12px rgba(20, 184, 166, 0.2);
+          0 6px 12px rgba(20, 184, 166, 0.2); /* Shadow */
       }
       #playButton.playing {
-        background: #f87171;
+        background: #f87171; /* Red background */
         box-shadow:
           0 1px 2px rgba(248, 113, 113, 0.2),
           0 4px 8px rgba(248, 113, 113, 0.15);
@@ -441,35 +441,35 @@
         0%,
         100% {
           filter: brightness(1.1) drop-shadow(0 0 4px rgba(6, 182, 212, 0.4));
-        }
+        } /* Brightness effect */
         50% {
           filter: brightness(1.2) drop-shadow(0 0 8px rgba(6, 182, 212, 0.6));
-        }
+        } /* Brightness effect */
       }
       .search-highlighted {
-        animation: pulse 1.5s infinite;
+        animation: pulse 1.5s infinite; /* Pulse animation */
         stroke: #06b6d4 !important;
-        stroke-width: 2.5px !important;
+        stroke-width: 2.5px !important; /* Stroke width */
       }
       .sector-highlighted {
-        animation: sectorShine 1.5s infinite;
-        stroke-width: 2.5px !important;
+        animation: sectorShine 1.5s infinite; /* Sector shine animation */
+        stroke-width: 2.5px !important; /* Stroke width */
       }
 
       .data-attribution {
         margin-top: 10px;
-        font-size: 12px;
+        font-size: 12px; /* Font size */
       }
       .data-attribution a {
-        color: #06b6d4;
-        text-decoration: none;
-        margin: 0 8px;
-        transition: color 0.2s ease;
-        font-weight: 500;
+        color: #06b6d4; /* Blue color */
+        text-decoration: none; /* No underline */
+        margin: 0 8px; /* Margin */
+        transition: color 0.2s ease; /* Smooth color transition */
+        font-weight: 500; /* Bold font weight */
       }
       .data-attribution a:hover {
         color: #0891b2;
-        text-decoration: underline;
+        text-decoration: underline; /* Underline on hover */
       }
 
       /* ===== TIMELINE CHART ===== */
@@ -520,6 +520,7 @@
         opacity: 0.3; /* Lower opacity to indicate discontinuity */
         stroke-dasharray: 4, 4; /* Dashed pattern for gaps */
       }
+
       #timeline-chart .dot {
         fill: #06b6d4;
         stroke: white;
@@ -576,7 +577,10 @@
         <div class="main-content">
           <div id="chart-wrapper"><div id="chart"></div></div>
         </div>
+
+        <!-- RIGHT: Sidebar with controls and details -->
         <div class="sidebar">
+          <!-- Year slider control -->
           <div class="sidebar-section">
             <div class="sidebar-section-title">Time Controls</div>
             <div id="controls">
@@ -615,11 +619,15 @@
                   value="2024"
                 />
               </div>
+
+              <!-- Play/Pause button -->
               <div>
                 <button id="playButton">▶ Play</button>
               </div>
             </div>
           </div>
+
+          <!-- Year annotations -->
           <div class="sidebar-section">
             <div class="sidebar-section-title">Year Context</div>
             <div id="annotations"></div>
@@ -639,8 +647,8 @@
 
     <script>
       /* ===== CONFIGURATION CONSTANTS ===== */
-      const width = 1000; // SVG width in pixels
-      const height = 667; // SVG height in pixels (roughly 3:2 aspect ratio)
+      const width = 800; // SVG width in pixels (80% to fit on screen)
+      const height = 534; // SVG height in pixels (roughly 3:2 aspect ratio)
 
       /* ===== BROWSER DETECTION ===== */
       // Detect Safari browser because it has bugs with foreignObject + flexbox
@@ -901,10 +909,14 @@
             .join(
               /* ENTER: New elements (companies appearing for first time) */
               (enter) => {
-                // Create group element for each company
+                // Create group element for each company, starting off-screen to the left
                 const g = enter
                   .append("g")
-                  .attr("transform", (d) => `translate(${d.x0},${d.y0})`); // Position at top-left corner
+                  .attr(
+                    "transform",
+                    (d) => `translate(${d.x0 - width},${d.y0})`,
+                  ) // Start off-screen left
+                  .style("opacity", 0); // Start invisible
 
                 // Add colored rectangle
                 g.append("rect")
@@ -930,6 +942,12 @@
                 if (!isSafari) {
                   div.append("div").attr("class", "val-label");
                 }
+
+                // Animate flying in from the left
+                g.transition()
+                  .duration(1000) // Animate over 1 second
+                  .attr("transform", (d) => `translate(${d.x0},${d.y0})`) // Move to final position
+                  .style("opacity", 1); // Fade in
 
                 return g; // Return the group element
               },
@@ -1139,6 +1157,7 @@
             d.data.Company.toUpperCase().includes(query) ||
             d.data.displayName.toUpperCase().includes(query);
           if (query === "") {
+            // If search box is empty, remove all highlights and restore opacity
             svg
               .selectAll("rect")
               .classed("search-highlighted", false)
@@ -1256,6 +1275,8 @@
           if (currentYear >= minYear && currentYear <= maxYear) {
             const xScale = currentTimelineData.xScale;
             const chartHeight = currentTimelineData.chartHeight;
+
+            // Add vertical line showing current year
 
             g.append("line")
               .attr("class", "current-year-line")
@@ -1412,6 +1433,8 @@
                 )
                 .style("left", event.pageX + 10 + "px")
                 .style("top", event.pageY - 10 + "px");
+
+              // Enlarge the dot
               d3.select(this).attr("r", 6);
             })
             .on("mousemove", function (event) {
